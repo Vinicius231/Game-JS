@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="divpular" onclick="jumpmobile()"></div>
+    <div class="plataforma">
+        <h1 class="onde">Onde você está jogando?</h1>
+        <div>
+            <div class="teclado" onclick="clickteclado()"><img src="./img/teclado.png"></div>
+            <div class="mobile" onclick="clickmobile()"><img src="./img/mobile.png"></div>
+        </div>
+    </div>
+
+    <nav class="fundo2">
+        <div class="recomecar">
+            <h1 style="font-size: 30pt;">Game Over</h1>
+            <button class="buttongameover" onclick="restart()">
+                Recomeçar
+            </button>
+        </div>
+        <div class=""></div>
+    </nav>
+    
+    
+    <div class="fundo" onclick="jumpmobile()">
+        <div class="ponto">
+            <p class="record">0</p>
+            <p class="pontuacao">0</p>
+        </div>
+        <img src="./img/cloud.png" class="cloud">
+        <div class="dinossauro"></div>
+        <div class="obstaculo"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

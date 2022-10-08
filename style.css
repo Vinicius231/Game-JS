@@ -1,0 +1,198 @@
+.plataforma {
+    max-width: 600px;
+    min-width: 300px;
+    height: 400px;
+    background: white;
+    margin: auto;
+    border: 5px solid black;
+    text-align: center;
+}
+.plataforma div {
+    display: flex;
+}
+
+.plataforma div div {
+    background: whitesmoke;
+    width: 250px;
+    height: 300px;
+    margin: auto;
+    border: 1px solid black;
+    cursor: pointer;
+    
+}
+img {
+    width: 250px;
+    height: 250px;   
+}
+@media (max-width: 525px) {
+    img {
+        width: 100px;
+        height: 100px;
+    }
+    .plataforma div div {
+        width: 100px;
+        height: 100px;
+
+    }
+}
+
+.fundo {
+    width: 80%;
+    height: 500px;
+    margin: auto;
+    position: relative;
+    border: 1px solid black;
+    border-bottom: 5px solid green;
+    overflow: hidden;
+    display: none;
+    background: linear-gradient(to top, cyan,rgb(0, 183, 255));
+}
+body {
+    margin: 0;
+}
+.dinossauro {
+    width: 80px;
+    height: 140px;
+    background: black;
+    position: absolute;
+    bottom: 0;
+    left: 35px; 
+}
+.jump {
+    animation: jumpdino 500ms ease-out;
+}
+.obstaculo {
+    width: 50px;
+    height: 100px;
+    background: rgb(0, 4, 255);
+    position: absolute;
+    bottom: 0;
+    animation: obstaculoanime 1.5s infinite linear;
+
+}
+
+@keyframes obstaculoanime {
+    from { 
+        right: 0;
+    }
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes jumpdino {
+    0% {
+        bottom: 0;
+    } 
+    40% {
+        bottom: 240px
+    }
+    50% {
+        bottom: 240px;
+    }
+    60% {
+        bottom: 240px;
+    }
+    100% { 
+        bottom: 0;
+    }
+}
+
+.fundo2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.836);
+    display: none;
+}
+.recomecar {
+    background: white;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    text-align: center;
+    border-radius: 15px;
+    
+}
+.buttongameover {
+    margin: 70px;
+    width: 130px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background: rgb(0, 195, 255);
+    font-weight: bolder;
+    color: white; 
+   
+}
+.buttongameover:hover {
+    background: white;
+    color: black;
+    border: 4px solid rgb(0, 195, 255);
+    transition: 250ms ease-in-out;
+}
+
+.divpular {
+    background: rgba(0, 0, 0, 0.027);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: none;
+}
+
+.ponto {
+    display: flex;
+    font-size: 20pt;
+    width: 300px;
+    height: 100px;
+    margin: auto;
+    
+}
+.record {
+    margin: auto;
+}
+.pontuacao {
+    margin: auto;
+}
+
+@media (max-width: 700px) {
+    .obstaculo {
+        animation: obstaculoanime 1s infinite linear;
+    }
+    
+}
+@media (max-width: 580px){
+    .dinossauro { 
+        width: 40px;
+        height: 100px;
+        background: black;
+        position: absolute;
+        bottom: 0;
+        left: 35px; 
+    }
+    .obstaculo {
+        width: 40px;
+        height: 70px;
+        background: rgb(0, 4, 255);
+        position: absolute;
+        bottom: 0;
+        
+        animation: obstaculoanime 1s infinite linear;
+    
+    }
+}
+
+.cloud {
+    position: absolute;
+    top: 0;
+    animation: cloudanime 25s  infinite linear;
+}
+
+@keyframes cloudanime {
+    from {
+        right: -30%;
+    }
+    to {
+        right: 100%;
+    }
+}
